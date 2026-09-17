@@ -1,0 +1,20 @@
+[Match]
+Name=br-nat
+
+[Link]
+RequiredForOnline=no
+
+[Network]
+Description=Internal Bridge
+Address=172.30.253.1/24
+DHCPServer=yes
+IPv4Forwarding=yes
+IPv6Forwarding=yes
+ConfigureWithoutCarrier=yes
+DNSDefaultRoute=no
+
+[DHCPServer]
+PoolOffset=32
+DNS=172.30.253.1
+EmitDNS=yes
+PersistLeases=yes

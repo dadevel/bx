@@ -1,0 +1,16 @@
+[Match]
+Name=eth* enp* enx*
+
+[Link]
+RequiredForOnline=yes
+
+[Network]
+Description=Ethernet Interface
+
+DHCP=yes
+IPv6AcceptRA=yes
+IPv6PrivacyExtensions=yes
+LinkLocalAddressing=ipv6
+IPv4Forwarding=yes
+IPv6Forwarding=yes
+DNSDefaultRoute=yes

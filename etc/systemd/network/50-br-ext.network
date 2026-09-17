@@ -1,0 +1,13 @@
+[Match]
+Name=br-ext
+
+[Link]
+RequiredForOnline=no
+
+[Network]
+Description=External Bridge
+DHCP=yes
+IPv6AcceptRA=yes
+IPv4Forwarding=yes
+IPv6Forwarding=yes
+DNSDefaultRoute=yes

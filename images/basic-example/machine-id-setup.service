@@ -1,0 +1,12 @@
+[Unit]
+Description=Machine Id Setup
+DefaultDependencies=no
+After=local-fs.target
+Before=first-boot-complete.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/machine-id-setup.sh
+
+[Install]
+RequiredBy=first-boot-complete.target
